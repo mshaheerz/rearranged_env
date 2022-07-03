@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style customizer-hide" dir="ltr" data-theme="theme-default" data-assets-path="../assets/">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>Login</title>
+
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.5/css/perfect-scrollbar.css"
+    integrity="sha512-2xznCEl5y5T5huJ2hCmwhvVtIGVF1j/aNUEJwi/BzpWPKEzsZPGpwnP1JrIMmjPpQaVicWOYVu8QvAIg9hwv9w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.css"
+    integrity="sha512-72LrFm5Wau6YFp7GGd7+qQJYkzRKj5UMQZ4aFuEo3WcRzO0xyAkVjK3NEw8wXjEsEG/skqvXKR5+VgOuzuqPtA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <script src="../assets/js/helpers.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <link rel="stylesheet" href="../assets/css/demo.css" />
+</head>
+
+<body>
+  <!-- Content -->
+
+  <div class="container-xxl">
+    <div class="authentication-wrapper authentication-basic container-p-y">
+      <div class="authentication-inner">
+        <!-- Register -->
+        <div class="card">
+          <div class="card-body">
+            <!-- Logo -->
+            <div class="app-brand justify-content-center">
+              <a href="login.html" class="app-brand-link gap-2">
+                <!-- <span class="app-brand-logo demo">
+                    <svg width="151.4" height="72.401" viewBox="0 0 151.4 72.401" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="10pt" stroke="#f7da00" stroke-width="0.25mm" fill="#f7da00" style="stroke:#181fe1;stroke-width:0.35mm;fill:#181fe1"><path d="M 9.5 71.2 L 0 71.2 L 0 1.2 L 41.5 1.2 L 41.5 9.4 L 9.5 9.4 L 9.5 30.8 L 36.2 30.8 L 36.2 38.6 L 9.5 38.6 L 9.5 71.2 Z M 149.9 3.6 L 147 11.6 Q 143.9 10.1 140.65 9.2 Q 137.857 8.427 134.215 8.318 A 40.705 40.705 0 0 0 133 8.3 A 21.173 21.173 0 0 0 125.095 9.755 A 19.981 19.981 0 0 0 121.55 11.6 A 21.167 21.167 0 0 0 115.184 18.181 A 26.978 26.978 0 0 0 113.6 21.1 Q 110.7 27.3 110.7 36.1 Q 110.7 44.5 113.55 50.8 A 25.677 25.677 0 0 0 117.136 56.628 A 21.423 21.423 0 0 0 121.45 60.6 A 19.703 19.703 0 0 0 132.595 64.097 A 23.894 23.894 0 0 0 133 64.1 A 33.715 33.715 0 0 0 136.971 63.879 Q 139.447 63.585 141.5 62.9 Q 145.1 61.7 148.5 59.8 L 151.4 67.7 A 37.561 37.561 0 0 1 146.905 69.744 A 47.894 47.894 0 0 1 142.95 71.05 A 33.592 33.592 0 0 1 137.985 72.041 Q 135.503 72.355 132.706 72.395 A 57.414 57.414 0 0 1 131.9 72.4 A 32.384 32.384 0 0 1 122.575 71.099 A 27.961 27.961 0 0 1 115.8 68.05 A 28.6 28.6 0 0 1 105.923 57.605 A 34.916 34.916 0 0 1 104.9 55.65 A 37.611 37.611 0 0 1 101.801 45.933 Q 101.025 41.667 101.001 36.814 A 62.816 62.816 0 0 1 101 36.5 Q 101 25.8 104.95 17.55 Q 108.9 9.3 116.15 4.65 A 29.371 29.371 0 0 1 128.83 0.239 A 37.292 37.292 0 0 1 133.1 0 A 45.639 45.639 0 0 1 138.158 0.268 A 35.2 35.2 0 0 1 142.2 0.95 A 38.224 38.224 0 0 1 149.675 3.495 A 35.605 35.605 0 0 1 149.9 3.6 Z M 76.5 71.2 L 67 71.2 L 67 9.6 L 45.5 9.6 L 45.5 1.2 L 98 1.2 L 98 9.6 L 76.5 9.6 L 76.5 71.2 Z" vector-effect="non-scaling-stroke"/></g></svg>
+                  </span> -->
+                <span class="app-brand-text menu-text demo text-body fw-bolder">Fantastic</span>
+              </a>
+            </div>
+            <!-- /Logo -->
+            <h4 class="mb-2">Welcome to Fantastic! 👋</h4>
+            <p class="mb-4">Please sign-in to your account</p>
+
+            <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+              <div class="mb-3">
+                <label for="email" class="form-label">Username</label>
+                <input type="text" class="form-control" id="email" name="email-username"
+                  placeholder="Enter your username" autofocus />
+              </div>
+              <div class="mb-3 form-password-toggle">
+                <div class="d-flex justify-content-between">
+                  <label class="form-label" for="password">Password</label>
+                  <a href="auth-forgot-password-basic.html">
+                    <small>Forgot Password?</small>
+                  </a>
+                </div>
+                <div class="input-group input-group-merge">
+                  <input type="password" id="password" class="form-control" name="password"
+                    placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                    aria-describedby="password" />
+                  <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="remember-me" />
+                  <label class="form-check-label" for="remember-me"> Remember Me </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+              </div>
+            </form>
+
+            <p class="text-center">
+              <span>New on our platform?</span>
+              <a href="auth-register-basic.html">
+                <span>Create an account</span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <!-- /Register -->
+      </div>
+    </div>
+  </div>
+
+  <!-- / Content -->
+
+
+
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+  <script src="../assets/js/jquery.js"></script>
+  <script src="../assets/js/bootstrap.js"></script>
+  <script src="../assets/js/menu.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"
+    integrity="sha512-yhdujT21BI/kqk9gcupTh4jMwqLhb+gc6Ytgs4cL0BJjXW+Jo9QyllqLbuluI0cBHqV4XsR7US3lemEGjogQ0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/dashboards-analytics.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
